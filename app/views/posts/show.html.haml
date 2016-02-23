@@ -2,7 +2,7 @@
 
 %p
   %b Author:
-  = @post.author.name
+  = @post.author.name if @post.author
 %p
   %b Title:
   = @post.title
