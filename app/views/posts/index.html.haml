@@ -13,15 +13,14 @@
 
   %tbody
     - @posts.each do |post|
-      - if @post
-        %tr
-          %td= post.author.name if @post.author
-          %td= post.title  if @post.title
-          %td= post.content  if @post.content
-          %td= post.likes  if @post.likes
-          %td= link_to 'Show', post
-          %td= link_to 'Edit', edit_post_path(post)
-          %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %tr
+        %td= post.author.name if @post.author
+        %td= post.title  if @post.title
+        %td= post.content  if @post.content
+        %td= post.likes  if @post.likes
+        %td= link_to 'Show', post
+        %td= link_to 'Edit', edit_post_path(post)
+        %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
