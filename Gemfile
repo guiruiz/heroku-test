@@ -10,7 +10,6 @@ gem 'rails', '4.2.5.1'
 gem 'rails_12factor'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'sqlite3'
 gem 'simple_form'
 gem 'turbolinks'
 gem "twitter-bootstrap-rails"

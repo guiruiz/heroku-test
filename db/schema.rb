@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160222234621) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "authors", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
@@ -28,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160222234621) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "posts", ["author_id"], name: "index_posts_on_author_id"
+  add_index "posts", ["author_id"], name: "index_posts_on_author_id", using: :btree
 
+  add_foreign_key "posts", "authors"
 end
