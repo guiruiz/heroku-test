@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'coffee-rails', '~> 4.1.0'
 gem 'haml-rails'
 gem 'jbuilder', '~> 2.0'
