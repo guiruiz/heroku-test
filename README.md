@@ -1,4 +1,4 @@
-# Heroku test
+# Rails Playground
 
 #### App to test Heroku, Travis-CI and ClodeClimate integration
 

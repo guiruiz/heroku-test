@@ -7,15 +7,15 @@ default: &default
 
 development:
   <<: *default
-  database: heroku_test_dev
+  database: playground_dev
   host: localhost
   username: postgres
   password: root
   encoding: unicode
-  
+
 test:
   <<: *default
-  database: heroku_test_test
+  database: playground_test
   host: localhost
   username: postgres
   password: root
@@ -23,4 +23,4 @@ test:
 
 production:
   <<: *default
-  database: heroku_test_prod
+  database: playground_prod
