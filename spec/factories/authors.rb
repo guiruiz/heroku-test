@@ -1,6 +1,5 @@
 FactoryGirl.define do
   factory :author do
-    name "MyString"
+    name nil
   end
-
 end
